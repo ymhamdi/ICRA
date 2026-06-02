@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ALVE-XXX ROBOT ARM urdf FINAL">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-2.19322308653323E-07 -0.000621172525131026 0.0287431513850053"
+        rpy="0 0 0" />
+      <mass
+        value="0.256155900000526" />
+      <inertia
+        ixx="0.000371455539274631"
+        ixy="-6.00414159617083E-12"
+        ixz="-1.73326843330531E-09"
+        iyy="0.000377378872461071"
+        iyz="2.08381037201909E-06"
+        izz="0.000587268004008315" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="0.00824820162411428 0.0322284212067109 -6.34282331746631E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.273451210728039" />
+      <inertia
+        ixx="0.000179530325565865"
+        ixy="1.3903918204087E-05"
+        ixz="3.44922289002938E-06"
+        iyy="0.000256272682726477"
+        iyz="-7.09538071591145E-06"
+        izz="0.000241418657569467" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0505"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.00797843705148053 0.0635886494935242 5.25104837043044E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.201536966586175" />
+      <inertia
+        ixx="0.000253185655576218"
+        ixy="-4.03390693499255E-07"
+        ixz="-5.17384820965433E-12"
+        iyy="3.22285900401755E-05"
+        iyz="-2.66432957147263E-11"
+        izz="0.000250682684327915" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.909803921568627 0.443137254901961 0.0313725490196078 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0 0.0594669 0.0174148"
+      rpy="0 0 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="0.0282163003588958 0.0404816035860009 -0.00350051850467702"
+        rpy="0 0 0" />
+      <mass
+        value="0.137710780574342" />
+      <inertia
+        ixx="6.35917351886021E-05"
+        ixy="-1.75104034971782E-06"
+        ixz="1.45884951918207E-06"
+        iyy="6.01703215941499E-05"
+        iyz="3.19113784478666E-06"
+        izz="5.38586862313284E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="-0.022499999999999 0.119999999999999 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="0.000191636911516896 0.00367169348265772 0.0687291508356731"
+        rpy="0 0 0" />
+      <mass
+        value="0.155606422816449" />
+      <inertia
+        ixx="0.00024749987022931"
+        ixy="-3.70790776140508E-07"
+        ixz="3.19542851160308E-05"
+        iyy="0.00027639462703452"
+        iyz="1.48623828979127E-06"
+        izz="5.22555156129629E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.909803921568627 0.443137254901961 0.0313725490196078 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="0.022499999999999 0.0438546912775978 0.018945153472918"
+      rpy="0 0 0" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0.0246047941163362 0.99969725622635" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="0.031546874222166 0.00184631091558007 0.0129065135089028"
+        rpy="0 0 0" />
+      <mass
+        value="0.0486350175140355" />
+      <inertia
+        ixx="1.71903378477451E-05"
+        ixy="1.18783912892287E-07"
+        ixz="9.87884930822726E-09"
+        iyy="2.04556587500131E-05"
+        iyz="5.0934698129758E-08"
+        izz="1.13723748423045E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="revolute">
+    <origin
+      xyz="-0.032499999999997 0.00369544569840125 0.150146630276874"
+      rpy="0 0 0" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="0.000117769021180253 0.0131887925149061 0.214557633263462"
+        rpy="0 0 0" />
+      <mass
+        value="0.0258964206405136" />
+      <inertia
+        ixx="5.43271591303768E-06"
+        ixy="1.96242054407672E-08"
+        ixz="-5.54500472950147E-09"
+        iyy="8.43604248016157E-06"
+        iyz="5.05636408023887E-07"
+        izz="4.11283844660635E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.909803921568627 0.443137254901961 0.0313725490196078 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_6"
+    type="revolute">
+    <origin
+      xyz="0.032499999999997 -0.00369544569840125 -0.150146630276874"
+      rpy="0 0 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 -0.0246047941163458 -0.99969725622635" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="servo">
+    <inertial>
+      <origin
+        xyz="0.000535171623262776 0.0130962540635648 5.75477069585429E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00771996718963347" />
+      <inertia
+        ixx="5.74227807249738E-07"
+        ixy="-5.34859768822222E-08"
+        ixz="1.02656416447425E-11"
+        iyy="4.64922518160153E-07"
+        iyz="-5.5365707358054E-11"
+        izz="8.48933381121995E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/servo.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.101960784313725 0.101960784313725 0.101960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/servo.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_servo"
+    type="fixed">
+    <origin
+      xyz="-6.65881523152362E-05 0.0476561432984847 0.217624520577229"
+      rpy="1.57079632679487 1.5461890493951 -1.57079632679494" />
+    <parent
+      link="link_6" />
+    <child
+      link="servo" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="r_grip">
+    <inertial>
+      <origin
+        xyz="-0.000276286269460812 0.0031006833351761 0.00333436172871027"
+        rpy="0 0 0" />
+      <mass
+        value="0.00220581323199052" />
+      <inertia
+        ixx="1.4848823488899E-07"
+        ixy="-5.15558491086301E-09"
+        ixz="-1.11516422359106E-07"
+        iyy="2.88512498946109E-07"
+        iyz="-5.28425743402551E-09"
+        izz="1.53884143372302E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/r_grip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/r_grip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_grip_joint"
+    type="revolute">
+    <origin
+      xyz="0.0142240002751391 0.00541633060441737 0.217444691034626"
+      rpy="0 0 0" />
+    <parent
+      link="link_6" />
+    <child
+      link="r_grip" />
+    <axis
+      xyz="0 -0.99969725622635 0.024604794116341" />
+    <limit
+      lower="-0.87"
+      upper="0.75"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="r_EE">
+    <inertial>
+      <origin
+        xyz="-0.00708189490087457 0.00392521195557083 0.0272969871193993"
+        rpy="0 0 0" />
+      <mass
+        value="0.00485682440462917" />
+      <inertia
+        ixx="1.2091249577724E-06"
+        ixy="5.20915233686251E-09"
+        ixz="1.79609697821422E-07"
+        iyy="1.2001741419825E-06"
+        iyz="-2.8397206303155E-08"
+        izz="1.41130487714215E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/r_EE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/r_EE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j_r_EE"
+    type="revolute">
+    <origin
+      xyz="0.0127023462303652 0.000429578689262522 0.0174538602094602"
+      rpy="0 0 0" />
+    <parent
+      link="r_grip" />
+    <child
+      link="r_EE" />
+    <axis
+      xyz="0 0.99969725622635 -0.0246047941163453" />
+    <limit
+      lower="-0.87"
+      upper="0.75"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="r_grip_joint"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="l_grip">
+    <inertial>
+      <origin
+        xyz="0.000766483593494001 0.00367177192388501 0.00334497734172745"
+        rpy="0 0 0" />
+      <mass
+        value="0.00258929173582169" />
+      <inertia
+        ixx="1.51153170080308E-07"
+        ixy="1.66796958884929E-09"
+        ixz="1.0937266572257E-07"
+        iyy="2.94574467702231E-07"
+        iyz="1.50964445735626E-10"
+        izz="1.70040061723379E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/l_grip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/l_grip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j_l_grip"
+    type="revolute">
+    <origin
+      xyz="-0.0142351286667708 0.00541693795963316 0.217469367987394"
+      rpy="0 0 0" />
+    <parent
+      link="link_6" />
+    <child
+      link="l_grip" />
+    <axis
+      xyz="0 -0.99969725622635 0.024604794116341" />
+    <limit
+      lower="-0.87"
+      upper="0.75"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="r_grip_joint"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="l_EE">
+    <inertial>
+      <origin
+        xyz="0.00711256537236965 0.00377028938502894 0.0272928479295815"
+        rpy="0 0 0" />
+      <mass
+        value="0.00485682440466729" />
+      <inertia
+        ixx="1.20872108177372E-06"
+        ixy="-3.65985265601331E-09"
+        ixz="-1.8084487241349E-07"
+        iyy="1.20040193344688E-06"
+        iyz="-2.37674351565515E-08"
+        izz="1.41306572255468E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/l_EE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/l_EE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j_l_EE"
+    type="revolute">
+    <origin
+      xyz="-0.0128614852656593 0.000426589153362522 0.017332394822563"
+      rpy="0 0 0" />
+    <parent
+      link="l_grip" />
+    <child
+      link="l_EE" />
+    <axis
+      xyz="0 -0.99969725622635 0.0246047941163453" />
+    <limit
+      lower="-0.87"
+      upper="0.75"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="r_grip_joint"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="grip_l1">
+    <inertial>
+      <origin
+        xyz="0.00628224677406407 0.00341107330695412 0.00853657318797724"
+        rpy="0 0 0" />
+      <mass
+        value="0.00113757631345372" />
+      <inertia
+        ixx="4.84800928679872E-08"
+        ixy="-7.17283732652608E-10"
+        ixz="-2.91433684052959E-08"
+        iyy="7.06739461252723E-08"
+        iyz="-1.00746025090338E-09"
+        izz="2.97654489102768E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/grip_l1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/grip_l1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_grip_l1"
+    type="revolute">
+    <origin
+      xyz="0.00444500008598381 0.00593805749014059 0.238642549211804"
+      rpy="0 0 0" />
+    <parent
+      link="link_6" />
+    <child
+      link="grip_l1" />
+    <axis
+      xyz="0 -0.99969725622635 0.0246047941163353" />
+    <limit
+      lower="-0.87"
+      upper="0.75"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="r_grip_joint"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="grip_l2">
+    <inertial>
+      <origin
+        xyz="-0.00635446675964647 0.0034097664763304 0.00848347642224384"
+        rpy="0 0 0" />
+      <mass
+        value="0.00113757631345371" />
+      <inertia
+        ixx="4.79886812077394E-08"
+        ixy="7.21058053126786E-10"
+        ixz="2.9296719732019E-08"
+        iyy="7.06742436238729E-08"
+        iyz="-9.95372828677488E-10"
+        izz="3.0256563071923E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/grip_l2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ALVE-XXX ROBOT ARM urdf FINAL/meshes/grip_l2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_grip_l2"
+    type="revolute">
+    <origin
+      xyz="-0.004445 0.0059381 0.23864"
+      rpy="0 0 0" />
+    <parent
+      link="link_6" />
+    <child
+      link="grip_l2" />
+    <axis
+      xyz="0 -0.9997 0.024605" />
+    <limit
+      lower="-0.87"
+      upper="0.75"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="r_grip_joint"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+</robot>
